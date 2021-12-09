@@ -1,0 +1,2 @@
+task-d63dd208-platform-horovod-0.task-d63dd208-platform-horovod slots=1
+task-d63dd208-platform-horovod-1.task-d63dd208-platform-horovod slots=1
