@@ -9,11 +9,15 @@ try:
     shutil.copyfile("/tmp/generated/executor.init", "/root/.ssh/id_rsa")
     os.chmod("/root/.ssh/id_rsa", 0o400)
 
-    python_script = sys.argv[2]
-    trainingset = sys.argv[3]
-    training_metrics = sys.argv[4]
-    net_weights = sys.argv[5]
+    # python_script = sys.argv[2]
+    # trainingset = sys.argv[3]
+    # training_metrics = sys.argv[4]
+    # net_weights = sys.argv[5]
 
+    for idx, arg in enumerate(sys.argv):
+        print(f"{idx} -> {arg}")
+    exit()
+    
     horovod_command = sys.argv[1].split(" ")
     horovod_command.insert(1, "--hostfile")
     horovod_command.insert(2, "/tmp/generated/executor.config")
