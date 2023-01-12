@@ -11,6 +11,6 @@ try:
 
     horovod_command = sys.argv[1:]
     print("horovod_command:", horovod_command)
-    process = subprocess.run(horovod_command, shell=True)
+    process = subprocess.run(horovod_command)
 except Exception as err:
     print(err)
